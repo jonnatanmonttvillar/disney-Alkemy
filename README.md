@@ -1,0 +1,48 @@
+------------------------------------------------------------
+------------------------------------------------------------
+#Formato || POST  || Postman
+------------------------------------------------------------
+#Personaje
+------------------------------------------------------------
+#"id_personaje": Automatico,
+{  
+     "peliculas": {
+            "idPelicula": 1,
+            "idGenero": "1",
+            "imagen": "https://lumiere-a.akamaihd.net/v1/images/image_07f1aaf3.jpeg?region=0%2C0%2C540%2C810",
+            "titulo": "Frozen",
+            "fecha_creacion": "2013",
+            "calificacion": 3
+        },
+    "imagen": "https://www.chiquipedia.com/imagenes/la-sirenita.jpg",
+    "nombre": "Sirenita 2",
+    "edad": 24,
+    "peso": 10.3,
+    "historia": "Es una sirenita del mar"
+}
+------------------------------------------------------------
+#Peliculas
+------------------------------------------------------------
+#"id_pelicula": Automatico,
+{
+    "genero": {
+        "id_genero": 1,
+        "nombre": "Adulto",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjcXFbFuuo3-o5izlZc7U-SE8E4nvWkDc5XA&usqp=CAU"
+    },
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/image_07f1aaf3.jpeg?region=0%2C0%2C540%2C810",
+    "titulo": "Frozen",
+    "fecha_creacion": "2013",
+    "calificacion": 3
+}
+------------------------------------------------------------
+#Genero
+------------------------------------------------------------
+#"id_genero": Automatico,
+{
+    "nombre": "Adulto",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjcXFbFuuo3-o5izlZc7U-SE8E4nvWkDc5XA&usqp=CAU"
+}
+
+------------------------------------------------------------
+------------------------------------------------------------
