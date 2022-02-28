@@ -13,6 +13,6 @@ public interface PersonajeDAO extends JpaRepository<Personajes, Long>{
 
     @Transactional(readOnly = true)
     List<Personajes> findByEdad(Integer edad);
-    
+
 }
 

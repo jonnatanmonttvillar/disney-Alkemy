@@ -2,7 +2,6 @@ package com.disney.alkemy.rest;
 
 import java.util.*;
 import com.disney.alkemy.DAO.PersonajeDAO;
-import com.disney.alkemy.model.Peliculas;
 import com.disney.alkemy.model.Personajes;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +17,10 @@ public class PersonajeREST{
     @Autowired
     public PersonajeDAO personajeDAO;
 
+    @GetMapping("/getAll")
+    public List<Personajes> findAll(){
+       return personajeDAO.findAll();
+    }
 
     @GetMapping("/getOne/{id_personaje}")
     public Optional<Personajes> findById(@PathVariable("id_personaje") Long id_personaje){
@@ -34,11 +37,6 @@ public class PersonajeREST{
     @Transactional(readOnly = true)
     public ResponseEntity<List<Personajes>> findByEdad(@PathVariable("edad") Integer edad){
         return ResponseEntity.ok(this.personajeDAO.findByEdad(edad));
-    }
-        
-    @GetMapping("/getAll")
-    public List<Personajes> findAll(){
-        return personajeDAO.findAll();
     }
 
     @PostMapping("/post")

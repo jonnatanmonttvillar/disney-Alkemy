@@ -4,6 +4,16 @@
 --DROP TABLE PERSONAJES;
 --DROP TABLE PELICULAS; 
 --DROP TABLE GENERO;
+--DROP TABLE USUARIO;
+-- -----------------------------------------------------
+-- Table USUARIO
+-- -----------------------------------------------------
+CREATE TABLE  USUARIO (
+  id_usuario SERIAL PRIMARY KEY,
+  username VARCHAR(500) NULL,
+  password VARCHAR(500) NULL,
+  email VARCHAR(500) NULL
+  );
 -- -----------------------------------------------------
 -- Table PERSONAJES
 -- -----------------------------------------------------
